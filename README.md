@@ -5,7 +5,7 @@ This plugin is forked from [a project by Andras Zoltan-Gyarfas](http:///realizar
 
 
 ## Demo
-Forthcoming.
+See [this jsFiddle](http://jsfiddle.net/kfr2/3UVEw/).
 
 ## Getting Started
 Download the [production version]() or [development version]() of jQuery.Select-Filter.
@@ -67,7 +67,7 @@ Download the [production version]() or [development version]() of jQuery.Select-
 
 
 ## License
-* (GNU GPL)[http://www.gnu.org/licenses/gpl.html]
+* [GNU GPL](http://www.gnu.org/licenses/gpl.html)
 
 
 ## Authors
