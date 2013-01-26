@@ -63,7 +63,7 @@ Download the [production version]() or [development version]() of jQuery.Select-
 
 
 ## Release History
-* 2012-01-14 -- 0.0.1 -- Initial verison.
+* 2013-01-14 -- 0.0.1 -- Initial verison.
 
 
 ## License
