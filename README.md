@@ -5,7 +5,7 @@ This plugin is forked from [a project by Andras Zoltan-Gyarfas](http:///realizar
 
 
 ## Demo
-See [this jsFiddle](http://jsfiddle.net/kfr2/3UVEw/).
+See [this jsFiddle](http://jsfiddle.net/Ct2eM/).
 
 ## Getting Started
 Download the [production version]() or [development version]() of jQuery.Select-Filter.
@@ -72,3 +72,6 @@ Download the [production version]() or [development version]() of jQuery.Select-
 
 ## Authors
 * [Kevin Richardson](http://github.com/kfr2)
+
+## Thanks
+* [Michael Zimmer](https://github.com/nonchip) for reporting an issue with the demo jsfiddle and hosting a version of the minified script to fix it.
