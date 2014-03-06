@@ -169,7 +169,7 @@
                 });
 
                 if (self.children().length === 0) {
-                    self.append('<option>(No results.)</option>');
+                    self.append('<option disabled>(No results.)</option>');
                 }
 
                 clearTimeout(keyDelayTimeout);
