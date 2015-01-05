@@ -5,10 +5,10 @@ This plugin is forked from [a project by Andras Zoltan-Gyarfas](http:///realizar
 
 
 ## Demo
-See [this jsFiddle](http://jsfiddle.net/Ct2eM/).
+See [this jsFiddle](http://jsfiddle.net/Ct2eM/40/).
 
 ## Getting Started
-Download the [production version]() or [development version]() of jQuery.Select-Filter.
+Download the production version (`jquery.select-filter.min.js`) or development version (`jquery.select-filter.js`) of jQuery.Select-Filter and include it in your HTML.
 
     <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
     <script type="text/javascript" src="jquery.select-filter.min.js"></script>
@@ -32,7 +32,7 @@ Download the [production version]() or [development version]() of jQuery.Select-
 
         // The filter box will be cleared when the user presses the Escape key.
         'clearInputOnEscape': true,
-        
+
         // If true, disable any regex the user enters into the search box.
         'disableRegex': true,
 
@@ -41,10 +41,10 @@ Download the [production version]() or [development version]() of jQuery.Select-
 
         // The placeholder text for the filter bar.
         'inputPlaceholder': 'type to filter list',
-        
+
         // The minimum number of characters at which to begin the filtering process.
         'minimumCharacters': 3,
-       
+
         // The minimum size attribute (number of rows) for the element this plugin is called upon.
         // If the element is less than this size, its size will be updated accordingly.
         'minimumSelectElementSize': 3,
@@ -72,6 +72,3 @@ Download the [production version]() or [development version]() of jQuery.Select-
 
 ## Authors
 * [Kevin Richardson](http://github.com/kfr2)
-
-## Thanks
-* [Michael Zimmer](https://github.com/nonchip) for reporting an issue with the demo jsfiddle and hosting a version of the minified script to fix it.
