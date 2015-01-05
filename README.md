@@ -5,7 +5,7 @@ This plugin is forked from [a project by Andras Zoltan-Gyarfas](http:///realizar
 
 
 ## Demo
-See [this jsFiddle](http://jsfiddle.net/Ct2eM/40/).
+See [this jsFiddle](http://jsfiddle.net/Ct2eM/42/).
 
 ## Getting Started
 Download the production version (`jquery.select-filter.min.js`) or development version (`jquery.select-filter.js`) of jQuery.Select-Filter and include it in your HTML.
@@ -24,7 +24,7 @@ Download the production version (`jquery.select-filter.min.js`) or development v
     $('select.class').selectFilter();
 
 ### Verbose Syntax
-    Any of the following attributes can be inside a dictionary to `selectFilter()`.  These options highlight jQuery.select-filter's default settings.
+    Any of the following attributes can be inside an object passed to `selectFilter()`.  These options highlight jQuery.select-filter's default settings.
 
     $('select.class').selectFilter({
         // Filtering should be case sensitive.
@@ -38,6 +38,10 @@ Download the production version (`jquery.select-filter.min.js`) or development v
 
         // The class to apply to the filter bar.
         'filterClass': 'filter-bar',
+
+        // Whether the input element should be appended to the DOM 'below'
+        // (default) or 'above' the select element
+        'inputLocation': 'below',
 
         // The placeholder text for the filter bar.
         'inputPlaceholder': 'type to filter list',

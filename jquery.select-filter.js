@@ -16,16 +16,20 @@
 
             // clear input box on Escape press
             'clearInputOnEscape': true,
-            
+
             // disable regular expressions in search input
             'disableRegex': true,
 
             // class to associate with filter element
             'filterClass': 'filter-bar',
 
+            // whether the input element should be appended to the DOM
+            // either 'below' (default) or 'above' the select element
+            'inputLocation': 'below',
+
             // text to display as placeholder for the filter bar
             'inputPlaceholder': 'type to filter list',
-            
+
             // the minimum number of characters required to begin initial filtering
             'minimumCharacters': 3,
 
@@ -73,7 +77,7 @@
 
         self.css('width', widthStr);
 
-        
+
         // Used for connection between input and select elements.
         var name = '';
         if (typeof(self.attr('name')) === 'undefined') {
@@ -99,7 +103,16 @@
             style: 'display: block; width: ' + widthStr
         });
 
-        self.addClass(name + '_select').css({'display': 'block'}).after(filterElement);
+
+        self.addClass(name + '_select').css({'display': 'block'});
+
+        if (options.inputLocation === 'above') {
+            self.before(filterElement);
+        }
+        else {
+            self.after(filterElement);
+        }
+
 
 
         // Clear the input box when escape is pressed.
