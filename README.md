@@ -23,6 +23,8 @@ Download the production version (`jquery.select-filter.min.js`) or development v
 ### Simple Syntax
     $('select.class').selectFilter();
 
+    You are able to use the select filter on more than one select element on a page. See the [jQuery selectors documentation](http://api.jquery.com/category/selectors/) for more information.
+
 ### Verbose Syntax
     Any of the following attributes can be inside an object passed to `selectFilter()`.  These options highlight jQuery.select-filter's default settings.
 
@@ -68,6 +70,7 @@ Download the production version (`jquery.select-filter.min.js`) or development v
 
 ## Release History
 * 2013-01-14 -- 0.0.1 -- Initial verison.
+* 2015-01-19 -- 0.0.2 -- Added 'inputLocation' option.
 
 
 ## License
