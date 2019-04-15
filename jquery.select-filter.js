@@ -123,7 +123,7 @@
             }
 
             if (options.preventReturn && key.which === 13) {
-                $(this).val('');
+                key.preventDefault();
             }
         });
 
