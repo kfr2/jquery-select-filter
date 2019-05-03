@@ -10,6 +10,10 @@
  */
 (function ($) {
     $.fn.selectFilter = function (options) {
+        const self = this;
+        if (!self || self.get(0).tagName !== 'SELECT') {
+            return false;
+        }
         const defaults = {
             // searching should be case sensitive
             'caseSensitive': false,
@@ -51,18 +55,13 @@
 
             // the form is not submitted if the enter ky is pressed
             'preventReturn': true,
+
+            //the element to refer to position the filter input
+            'referenceElement': self,
         };
 
         // Overwrite default settings with user provided ones.
         options = $.extend(defaults, options);
-
-
-        // Note the calling element -- i.e., the select element -- and its
-        // children.
-        const self = this;
-        if (!self || self.get(0).tagName !== 'SELECT') {
-            return false;
-        }
 
         // Keep a copy of the children of the calling element.
         const clone = self.children().clone();
@@ -109,14 +108,14 @@
         self.addClass(name + '_select').css({'display': 'block'});
 
         if (options.inputLocation === 'above') {
-            self.before(filterElement);
+            options.referenceElement.before(filterElement);
         } else {
-            self.after(filterElement);
+            options.referenceElement.after(filterElement);
         }
-
 
         const $input = $('#input_' + name);
 
+        // Clear the input box when escape is pressed.
         $input.on('keydown', function (key) {
             if (options.clearInputOnEscape && key.which === 27) {
                 $(this).val('');
