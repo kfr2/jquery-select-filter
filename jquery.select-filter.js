@@ -115,9 +115,9 @@
         }
 
 
-        // Clear the input box when escape is pressed.
+        const $input = $('#input_' + name);
 
-        $('#input_' + name).on('keydown', function (key) {
+        $input.on('keydown', function (key) {
             if (options.clearInputOnEscape && key.which === 27) {
                 $(this).val('');
             }
@@ -134,7 +134,7 @@
         let filteringStarted = false;
         let oldSearchText = null;
 
-        $('#input_' + name).on('keyup', function () {
+        $input.on('keyup', function () {
             clearTimeout(keyDelayTimeout);
 
             let searchText = $(this).val();
